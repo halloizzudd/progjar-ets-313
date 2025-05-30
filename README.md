@@ -1,4 +1,4 @@
-#Pemrograman Jaringan - ETS
+# Pemrograman Jaringan - ETS
 
 ---
 
@@ -18,14 +18,17 @@ Membuat file dummy
 fallocate -l 50M file_50MB.dat
 fallocate -l 100M file_100MB.dat
 ```
+
 Menjalankan server multiproses
 ```
 python3 file_server.py --operation server --pool {jumlah pool}
 ```
+
 Menjalankan sever Multithread
 ```
 python3 file_server.py --operation thread --pool {jumlah pool}
 ```
+
 Menjalankan Client
 ```
 python file_client_cli.py stress --task <upload|download|list> --size <10|50|100> --workers <1|5|50> [--method thread|process]
